@@ -1,7 +1,6 @@
-<h1>My Expense Sheet</h1>
-your balance = <%= @remaining_amount %> <br>
-<a href="/expenses/add_expense">add expense</a><br>
-<a href="/incomes/add_income">add income</a>
+<h3>your balance = <%= @remaining_amount %></h3> <br>
+<%= link_to "Add Expense", expenses_add_expense_path, class: "btn btn-warning" %>
+<%= link_to "Add Income", incomes_add_income_path, class: "btn btn-warning" %>
 
 <hr>
 
@@ -19,16 +18,3 @@ your balance = <%= @remaining_amount %> <br>
     </div>
 <% end %>
 
-<div class="row">
-  <div class="span2">
-    <h3>
-      <a href="/expenses">Expenses</a>
-    </h3>
-  </div>
-  <div class="span2">
-    <h3>
-      <a href="/incomes">Incomes</a>
-    </h3>
-  </div>
-
-</div>
