@@ -1,0 +1,34 @@
+<h1>My Expense Sheet</h1>
+your balance = <%= @remaining_amount %> <br>
+<a href="/expenses/add_expense">add expense</a><br>
+<a href="/incomes/add_income">add income</a>
+
+<hr>
+
+<% if flash[:error] %>
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong><%= flash[:error] %></strong>
+    </div>
+<% end %>
+
+<% if flash[:success] %>
+    <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong><%= flash[:success] %></strong>
+    </div>
+<% end %>
+
+<div class="row">
+  <div class="span2">
+    <h3>
+      <a href="/expenses">Expenses</a>
+    </h3>
+  </div>
+  <div class="span2">
+    <h3>
+      <a href="/incomes">Incomes</a>
+    </h3>
+  </div>
+
+</div>

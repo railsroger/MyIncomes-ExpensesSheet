@@ -1,0 +1,17 @@
+<div class="well">
+  <%= form_for @new_expense, :url => {:action => "add_expense"} do |e| %>
+      <table>
+        <tbody>
+        <tr>
+          <td>Name   </td>
+          <td><%= e.text_field :name, :autofocus => true %></td>
+        </tr>
+        <tr>
+          <td>Amount  </td>
+          <td><%= e.text_field :amount %></td>
+        </tr>
+        </tbody>
+      </table>
+      <%= e.submit "Add Expence", class: "btn btn-primary" %>
+  <% end %>
+</div>

@@ -1,0 +1,17 @@
+<div class="well">
+  <%= form_for @new_income, :url => {:action => "add_income"} do |i| %>
+      <table>
+        <tbody>
+        <tr>
+          <td>Source   </td>
+          <td><%= i.text_field :source, :autofocus => true %></td>
+        </tr>
+        <tr>
+          <td>Amount  </td>
+          <td><%= i.text_field :amount %></td>
+        </tr>
+        </tbody>
+      </table>
+      <%= i.submit "Add Income", class: "btn btn-primary" %>
+  <% end %>
+</div>
