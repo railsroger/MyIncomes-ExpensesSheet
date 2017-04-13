@@ -1,8 +1,12 @@
 class ExpensesController < ApplicationController
+ 	before_action :authenticate_user!, only: [:add_expense, :create_expense]
  	def index
 	    @expenses = Expense.all_expenses
 	    @remaining_amount = AccountBalance.current_balance
 	    @total_expense =  Expense.sum
+	    
+	    
+	    
   	end
 
   	def add_expense

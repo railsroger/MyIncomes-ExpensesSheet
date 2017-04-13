@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reports
   root 'home#index'
   match 'expenses' => 'expenses#index', :as => :expense_index, via: [:get, :post]
   match 'incomes' => 'incomes#index', :as => :income_index, via: [:get, :post]

@@ -1,4 +1,5 @@
 class IncomesController < ApplicationController
+	before_action :authenticate_user!, only: [:add_income, :create_income]
 	def index
 		@incomes = Income.all_incomes
 		@remaining_amount = AccountBalance.current_balance

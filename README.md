@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple application of Accounting for Income and Expenses.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 5.0.2
 
-* System dependencies
+* Database Postgresql
 
-* Configuration
+* Gems: Bootstrap-sass, simple_form, Devise
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

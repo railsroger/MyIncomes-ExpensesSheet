@@ -1,4 +1,6 @@
 class Income < ApplicationRecord
+	
+	
 	validates :source, presence: true
 	validates :amount, presence: true
 
